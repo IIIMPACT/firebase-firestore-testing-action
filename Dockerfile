@@ -7,6 +7,8 @@ LABEL maintainer="Bhekani Khumalo <bhekani@iiimpact.io>"
 
 LABEL com.github.actions.name="irebase Firestore Testing"
 LABEL com.github.actions.description="Test firestore with the emulators."
+LABEL com.github.actions.icon="airplay"
+LABEL com.github.actions.color="orange"
 
 RUN npm ci
 RUN firebase serve --only firestore

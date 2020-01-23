@@ -2,6 +2,9 @@
 name: 'Firebase Firestore Testing'
 author: 'Bhekani Khumalo'
 description: 'Test firestore with the emulators'
+branding:
+  icon: 'airplay'
+  color: 'orange'
 runs:
   using: 'docker'
   image: 'Dockerfile'
