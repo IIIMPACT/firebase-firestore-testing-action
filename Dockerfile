@@ -10,9 +10,7 @@ LABEL com.github.actions.description="Test firestore with the emulators."
 LABEL com.github.actions.icon="airplay"
 LABEL com.github.actions.color="orange"
 
-RUN npm ci
 RUN firebase serve --only firestore
-RUN npm run test
 
 COPY LICENSE README.md /
 COPY entrypoint.sh /entrypoint.sh

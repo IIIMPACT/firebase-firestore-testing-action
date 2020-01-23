@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh
 
-time=$(date)
-echo ::set-output name=time::$time
+# Exit if any subcommand fails
+set -e
