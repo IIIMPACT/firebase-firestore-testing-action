@@ -15,5 +15,6 @@ else
     fi
 fi
 
+sh -c "ls"
 echo "## Running Jest"
 sh -c "$setup npm run --prefix functions test:ci"
