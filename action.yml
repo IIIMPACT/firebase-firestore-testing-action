@@ -1,0 +1,7 @@
+# action.yml
+name: 'Firebase Firestore Testing'
+author: 'Bhekani Khumalo'
+description: 'Test firestore with the emulators'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
