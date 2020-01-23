@@ -1,11 +1,20 @@
-#!/bin/sh -l
+#!/bin/sh
 
+# Exit if any subcommand fails
 set -e
 
-npm i -g npm
+# Setup node modules if needed
+if [ -e node_modules/.bin/jest ]; then
+    setup=""
+else
+    echo "## Your environment is not ready yet. Installing modules..."
+    if [ -f yarn.lock ]; then
+        setup="yarn --non-interactive --silent --ignore-scripts --production=false &&"
+    else
+        setup="NODE_ENV=development npm install &&"
+    fi
+fi
 
-npm ci
 
-npm run test:ci
-
-echo 'Running!'
+echo "## Running Jest"
+sh -c "$setup npm run test:ci"
