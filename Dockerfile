@@ -11,6 +11,7 @@ LABEL com.github.actions.icon="airplay"
 LABEL com.github.actions.color="orange"
 
 COPY LICENSE README.md /
+
 COPY "entrypoint.sh" "/entrypoint.sh"
 
 ENTRYPOINT ["/entrypoint.sh"]
