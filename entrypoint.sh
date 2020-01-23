@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/sh -l
 
-# Exit if any subcommand fails
 set -e
+
+echo 'Running!'
