@@ -11,7 +11,7 @@ else
     if [ -f yarn.lock ]; then
         setup="yarn --non-interactive --silent --ignore-scripts --production=false &&"
     else
-        setup="npm --prefix functions ci &&"
+        setup="npm --prefix functions ci -f &&"
     fi
 fi
 
