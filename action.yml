@@ -1,7 +1,7 @@
 # action.yml
 name: 'Firebase Firestore Testing'
 author: 'Bhekani Khumalo'
-description: 'Test firestore with the emulators'
+description: 'Test firestore with the emulators and jest.'
 branding:
   icon: 'airplay'
   color: 'orange'

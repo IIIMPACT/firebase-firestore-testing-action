@@ -1,16 +1,14 @@
-FROM wceolin/firebase-emulator
+FROM bhekanik/firebase:latest
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/IIIMPACT/firebase-firestore-testing-action.git"
 LABEL homepage="https://github.com/IIIMPACT/firebase-firestore-testing-action.git"
 LABEL maintainer="Bhekani Khumalo <bhekani@iiimpact.io>"
 
-LABEL com.github.actions.name="irebase Firestore Testing"
-LABEL com.github.actions.description="Test firestore with the emulators."
+LABEL com.github.actions.name="Firebase Firestore Testing"
+LABEL com.github.actions.description="Test firestore with the emulators and jest."
 LABEL com.github.actions.icon="airplay"
 LABEL com.github.actions.color="orange"
-
-RUN apk -U --no-cache add bash python3
 
 COPY LICENSE README.md /
 

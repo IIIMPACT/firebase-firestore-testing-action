@@ -16,10 +16,9 @@ else
     if [ -f yarn.lock ]; then
         setup="yarn --non-interactive --silent --ignore-scripts --production=false &&"
     else
-        setup="npm --add-python-to-path='true' --prefix functions ci -f &&"
+        setup="npm --prefix functions ci &&"
     fi
 fi
 
-sh -c "firebase $*"
-echo "## Running Jest"
-sh -c "$setup npm run --prefix functions test:ci"
+args=$@
+sh -c "$setup ./functions/node_modules/.bin/jest $args"
