@@ -10,6 +10,8 @@ LABEL com.github.actions.description="Test firestore with the emulators and jest
 LABEL com.github.actions.icon="airplay"
 LABEL com.github.actions.color="orange"
 
+RUN npm i -g yarn
+
 COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
