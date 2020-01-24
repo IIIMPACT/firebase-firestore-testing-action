@@ -3,11 +3,6 @@
 # Exit if any subcommand fails
 set -e
 
-if [ -z "$FIREBASE_TOKEN" ]; then
-    echo "FIREBASE_TOKEN is required to run commands with the firebase cli"
-    exit 126
-fi
-
 # Setup node modules if needed
 if [ -e node_modules/.bin/jest ]; then
     setup=""
