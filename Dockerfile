@@ -10,6 +10,8 @@ LABEL com.github.actions.description="Test firestore with the emulators."
 LABEL com.github.actions.icon="airplay"
 LABEL com.github.actions.color="orange"
 
+RUN apk -U --no-cache add bash python3
+
 COPY LICENSE README.md /
 
 COPY entrypoint.sh /entrypoint.sh
