@@ -15,5 +15,4 @@ else
     fi
 fi
 
-args=$@
-sh -c "$setup ./functions/node_modules/.bin/jest $args"
+sh -c "$setup npm --prefix functions run test"
