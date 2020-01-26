@@ -17,4 +17,4 @@ fi
 
 echo "## Running Jest"
 args=$@
-sh -c "$setup npm --prefix functions test $args"
+sh -c "$setup npm --prefix functions run test $args"
