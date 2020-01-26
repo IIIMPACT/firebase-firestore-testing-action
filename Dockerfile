@@ -1,4 +1,4 @@
-FROM bhekanik/firebase:1.0.0
+FROM bhekanik/firebase:latest
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/IIIMPACT/firebase-firestore-testing-action.git"
