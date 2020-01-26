@@ -11,10 +11,10 @@ else
     if [ -f yarn.lock ]; then
         setup="yarn --non-interactive --silent --ignore-scripts --production=false &&"
     else
-        setup="NODE_ENV=development yarn --modules-folder ./functions &&"
+        setup="NODE_ENV=development npm --prefix functions ci &&"
     fi
 fi
 
 echo "## Running Jest"
 args=$@
-sh -c "$setup ./functions/node_modules/.bin/jest $args"
+sh -c "$setup npm --prefix functions test $args"
