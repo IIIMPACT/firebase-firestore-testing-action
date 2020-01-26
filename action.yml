@@ -1,7 +1,6 @@
-# action.yml
-name: 'Firebase Firestore Testing'
-author: 'Bhekani Khumalo'
-description: 'Test firestore with the emulators and jest.'
+name: 'Jest testing (including firestore rules)'
+author: 'Bhekani Khumalo <bhekani@gmail.com>'
+description: 'Run jest to test code, this includes the firebase firestore emulator to make it possible to also test firestore rules.'
 branding:
   icon: 'airplay'
   color: 'orange'

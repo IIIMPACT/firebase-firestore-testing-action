@@ -15,9 +15,5 @@ else
     fi
 fi
 
-echo "## Starting emulator"
-sh -c "firebase serve --only firestore"
-
 echo "## Running Jest"
-args=$@
-sh -c "$setup npm --prefix functions run test:ci $args"
+sh -c "$setup npm --prefix functions run test:ci"
