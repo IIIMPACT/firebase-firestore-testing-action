@@ -6,14 +6,13 @@ This action runs jest to test code. It also includes the firebase firestore emul
 
 This action assumes that:
 
-* Your file structure contains a folder in the root directory called `funcitons` which contains all your functions code.
-* You have the following npm scripts in your `package.json`:
+* Your file structure contains a folder in the root directory called `functions` which contains all your functions code.
+* You have the following npm script in your `package.json`:
 
 ```javascript
 ...
   "scripts": {
-    "test": "jest",
-    "test:ci": "firebase emulators:exec --only firestore \"npm run test\"",
+    "test": "firebase emulators:exec --only firestore jest",
   }
 ...
 ```
@@ -31,7 +30,6 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
