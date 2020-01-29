@@ -22,7 +22,7 @@ This action assumes that:
 Here is an example yaml file to run the action:
 
 ```yaml
-name: Test
+name: Jest
 
 on: [pull_request]
 
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Run Jest
-        uses: IIIMPACT/firebase-firestore-testing-action@v3.0.0
+        uses: IIIMPACT/firebase-firestore-testing-action@v3.1.1
 ```
 
 ## License
