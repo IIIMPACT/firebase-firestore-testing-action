@@ -12,7 +12,7 @@ This action assumes that:
 ```javascript
 ...
   "scripts": {
-    "test": "firebase emulators:exec --only firestore jest",
+    "test:ci": "firebase emulators:exec --only firestore jest",
   }
 ...
 ```
